@@ -1,0 +1,15 @@
+html
+    head
+        -let title = "Cool Site";
+        title My Website - #{title}
+        block test
+            p 1
+            p 2
+
+    body
+        block content
+            h1 main page content (can be replaced by subpage block content)
+
+        block foot
+            #footer
+                p footer content
