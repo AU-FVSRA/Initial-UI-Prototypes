@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Joan's Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+</head>
+<body>
+
+<section class="section">
+    <div class="container">
+        <h1 class="title">
+            Minor Injury Report Form
+        </h1>
+        <p class="subtitle">
+            Please fill out the form below to report a minor injury.
+        </p>
+
+        <!-- form below -->
+        <form>
+
+            <!-- Form section #1 -->
+            <div class="field">
+                <label class="label" for="programName">Program/Group Name</label>
+                <div class="control">
+                    <!-- <input class="input" type="text" id="programName" name="programName">-->
+                    <div class="select">
+                        <select id="programName" name="programName">
+                            <option>Basketball Program - Summer</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                            <option>Option 5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="programLeader">Program Leader(s)</label>
+                <div class="control">
+                    <input class="input" id="programLeader" name="programLeader" type="text">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="programSeasonYear">Program Season/Year</label>
+                <div class="control">
+                    <input class="input" id="programSeasonYear" name="programSeasonYear" type="text">
+                </div>
+            </div>
+            
+            <hr>
+
+            <!-- Form Section #2 -->
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label" for="injuryDate">Injury Date</label>
+                        <div class="control">
+                            <input class="input" id="injuryDate" name="injuryDate" type="date">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="injuryTime">Injury Time</label>
+                        <div class="control">
+                            <input class="input" id="injuryTime" name="injuryTime" type="time">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="nameOfInjured">Name of Injured Person</label>
+                <div class="control">
+                    <input class="input" id="nameOfInjured" name="nameOfInjured" placeholder="Name of Injured Person"
+                           type="text">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="injuryLocation">Location of Injury on Person</label>
+                <div class="control">
+                    <input class="input" id="injuryLocation" name="injuryLocation"
+                           placeholder="Location of Injury (Ex. Right Elbow, Left Knee, etc.)" type="text">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="treatmentAdministered">Treatment Administered</label>
+                <div class="control">
+                    <input class="input" id="treatmentAdministered" name="treatmentAdministered"
+                           placeholder="Treatment Administered (Ex. Rinsed wound, applied bandage, ice pack provided, etc.)"
+                           type="text">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="howInjuryOccurred">How Injury Occurred</label>
+                <div class="control">
+            <textarea class="textarea" id="howInjuryOccurred" name="howInjuryOccurred"
+                      placeholder="Explain how the injury occurred (Ex. Fell off swing)"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="locationInjuryOccurred">Facility/Location Injury Occurred</label>
+                <div class="control">
+            <textarea class="textarea" id="locationInjuryOccurred" name="locationInjuryOccurred"
+                      placeholder="Where did the injury take place? (Ex. Harmony Park Swings)" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="staffWhoNotified">Full Name of Staff Who Notified Parent/Guardian</label>
+                <div class="control">
+                    <input class="input" id="staffWhoNotified" name="staffWhoNotified"
+                           placeholder="Staff member who notified parent/guardian of injured peron."
+                           type="text">
+                </div>
+            </div>
+            <div class="field is-pulled-right">
+                <div class="control">
+                    <input class="button is-info" type="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
