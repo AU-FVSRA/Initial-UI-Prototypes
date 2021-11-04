@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bulma Form Samples</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- MIGHT ALSO LOOK INTO THIS SITE TO HELP OUT -->
+<!-- https://jesobreira.github.io/Bulma-Form-Builder/ -->
+
+
+<section class="section">
+    <div class="container">
+        <!-- BASIC FORM EXAMPLE -->
+        <form>
+
+            <h1 class="title">Example Regular field</h1>
+
+            <!-- Single field example -->
+            <div class="field">
+                <label class="label" for="id">Field Label</label>
+                <div class="control">
+                    <!-- Change input type for other data fields like date/time/email/password/ -->
+                    <input class="input" id="id" name="name" placeholder="Placeholder Text" type="text">
+                </div>
+            </div>
+
+            <hr>
+
+            <h1 class="title">Example of side-by-side</h1>
+
+            <!-- Group of fields example -->
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label" for="field1">Field Label</label>
+                        <div class="control">
+                            <input class="input" id="field1" name="field1" placeholder="Placeholder Text" type="text">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="field2">Field Label</label>
+                        <div class="control">
+                            <input class="input" id="field2" name="field2" placeholder="Placeholder Text" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- example of radio buttons -->
+            <div class="field">
+                <label class="label">Radio Buttons</label>
+
+                <label class="radio">
+                    <input name="answer" type="radio">
+                    Yes
+                </label>
+                <label class="radio">
+                    <input name="answer" type="radio">
+                    No
+                </label>
+            </div>
+
+            <hr>
+
+            <!-- Example of checkbox -->
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox"> Option #1
+                </label><br>
+                <label class="checkbox">
+                    <input type="checkbox"> Option #2
+                </label><br>
+                <label class="checkbox">
+                    <input type="checkbox"> Option #3
+                </label><br>
+            </div>
+
+            <hr>
+
+            <!-- FORM INPUT SUBMIT BUTTON -->
+            <div class="field is-grouped">
+                <div class="control">
+                    <input class="button is-info" type="submit">
+                </div>
+                <div class="control">
+                    <input class="button is-danger" type="reset" value="Clear Fields">
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+
+</body>
+</html>
