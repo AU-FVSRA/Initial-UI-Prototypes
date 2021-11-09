@@ -1,0 +1,3 @@
+# Dont commit the node modules folder
+# package.json will prompt you to install the the dependencies automatically
+/node_modules/
