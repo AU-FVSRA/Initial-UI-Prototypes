@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+<body>
+<nav aria-label="main navigation" class="navbar is-fixed-top is-light" role="navigation">
+    <div class="navbar-brand"><a class="navbar-item" href="/index.html"><img alt="FVSR_Logo" src="../testFVSRLogo.png"></a>
+        <!-- Mobile Menu--><a aria-expanded="false" aria-label="menu" class="navbar-burger"
+                              data-target="navbarBasicExample" role="button"><span aria-hidden="true"></span><span
+                aria-hidden="true"></span><span aria-hidden="true"></span></a>
+    </div>
+    <div class="navbar-menu" id="mainSiteNavBar">
+        <div class="navbar-start"><a class="navbar-item">Home</a>
+            <div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link">More</a>
+                <div class="navbar-dropdown"><a class="navbar-item">About</a><a class="navbar-item">Contact</a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">Report an issue</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons"><a class="button is-info"><strong>Sign up</strong></a><a
+                        class="button is-inverted">Log in</a></div>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="section">
+    <div class="container">
+        <h1 class="title">Minor Injury Report Form</h1>
+        <p class="subtitle">Please fill out the form below to report a minor injury.</p>
+        <!-- form below-->
+        <form id="minorInjuryReportForm" method="post">
+            <!-- Form section #1-->
+            <div class="columns">
+                <!-- warning/instructions-->
+                <div class="column" id="instructionsCol">
+                    <article class="message is-danger">
+                        <div class="message-header">
+                            <p>Instructions</p>
+                        </div>
+                        <div class="message-body">
+                            <div class="content">
+                                <ol>
+                                    <li><strong>Administer necessary first aid</strong></li>
+                                    <li>Document minor injuries utilizing this form
+                                        <ul>
+                                            <li>(For serious injuries please utilize PDRMA forms)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Notify parent/guardian upon dismissal from program</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- program/group name-->
+                <div class="column">
+                    <div class="field">
+                        <label class="label" for="programName">Program/Group Name</label>
+                        <div class="control has-icons-left"><span class="select" id="programSelection">
+                    <select id="programName" name="programName">
+                      <option value="">Select Program/Group</option>
+                      <option value="1">Basketball Program - Summer</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                      <option value="4">Option 4</option>
+                      <option value="5">Option 5</option>
+                      <option value="addNewProgram">Add New...</option>
+                    </select></span><span class="icon is-small is-left"><i class="fas fa-globe"></i></span></div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="programLeader">Program Leader(s)</label>
+                        <div class="control">
+                            <input class="input" id="programLeader" name="programLeader" type="text">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="programSeasonYear">Program Season/Year</label>
+                        <div class="control">
+                            <input class="input" id="programSeasonYear" name="programSeasonYear" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Form Section #2-->
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label" for="injuryDate">Injury Date</label>
+                        <div class="control">
+                            <input class="input" id="injuryDate" name="injuryDate" type="date">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="injuryTime">Injury Time</label>
+                        <div class="control">
+                            <input class="input" id="injuryTime" name="injuryTime" type="time">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="nameOfInjured">Name of Injured Person</label>
+                <div class="control">
+                    <input class="input" id="nameOfInjured" name="nameOfInjured" placeholder="Name of Injured Person"
+                           type="text">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="injuryLocation">Location of Injury on Person</label>
+                <div class="control">
+                    <input class="input" id="injuryLocation" name="injuryLocation"
+                           placeholder="Location of Injury (Ex. Right Elbow, Left Knee, etc.)" type="text">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="treatmentAdministered">Treatment Administered</label>
+                <div class="control">
+                    <input class="input" id="treatmentAdministered" name="treatmentAdministered"
+                           placeholder="Treatment Administered (Ex. Rinsed wound, applied bandage, ice pack provided, etc.)"
+                           type="text">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="howInjuryOccurred">How Injury Occurred</label>
+                <div class="control">
+                    <textarea class="textarea" id="howInjuryOccurred" name="howInjuryOccurred"
+                              placeholder="Explain how the injury occurred (Ex. Fell off swing)"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="locationInjuryOccurred">Facility/Location Injury Occurred</label>
+                <div class="control">
+                    <textarea class="textarea" id="locationInjuryOccurred" name="locationInjuryOccurred"
+                              placeholder="Where did the injury take place? (Ex. Harmony Park Swings)"
+                              rows="2"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="staffWhoNotified">Full Name of Staff Who Notified Parent/Guardian</label>
+                <div class="control">
+                    <input class="input" id="staffWhoNotified" name="staffWhoNotified"
+                           placeholder="Staff member who notified parent/guardian of injured peron." type="text">
+                </div>
+            </div>
+            <div class="field is-pulled-right">
+                <div class="control">
+                    <input class="button is-info" type="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>&copy; | FVSRA | FVSRA.org</p>
+        <p class="is-italic">Powered by: AU Coding Connoisseurs</p>
+    </div>
+</footer>
+</body>
+</head>

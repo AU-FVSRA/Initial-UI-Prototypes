@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Selection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+</head>
+<body>
+
+<section class="section is-large">
+    <div class="container">
+
+        <h1 class="title">
+            Form Selection
+        </h1>
+        <p class="subtitle">
+            Please select a form to fill out.
+        </p>
+
+        <form>
+            <div class="field">
+                <label class="label" for="formSelection">Select a form</label>
+                <div class="control">
+                    <div class="select">
+                        <select name="form" id="formSelection">
+                            <option value="">Select a form</option>
+                            <option value="form1">Minor Injury Log (Most Common)</option>
+                            <option value="form2">PDRMA Accident/Incident Report (Form 01)</option>
+                            <option value="form3">PDRMA Vehicle Accident Report (Form 02)</option>
+                            <option value="form4">PDRMA Property Loss Report (Form 03)</option>
+                            <option value="form5">PDRMA Employee Injury Report (Form 04)</option>
+                            <option value="form6">PDRMA Notification of Injury to Employer Report (Form 04E)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <button class="button is-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Form Selection</strong> by <a href="google.com">
+        </a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
