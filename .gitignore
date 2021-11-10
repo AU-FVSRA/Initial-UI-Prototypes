@@ -1,3 +1,7 @@
 # Dont commit the node modules folder
 # package.json will prompt you to install the the dependencies automatically
 /node_modules/
+/.idea/.gitignore
+/.idea/Initial-UI-Prototypes.iml
+/.idea/modules.xml
+/.idea/vcs.xml
