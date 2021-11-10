@@ -1,0 +1,53 @@
+section.section.is-medium
+    .container
+        // Start of Registration Form
+        h1.title
+            | Registration
+        p.subtitle
+            | Please fill out all the required information below to create your personal account
+        form
+            .field
+                .columns
+                    .column
+                        label(for='firstName') First Name
+                        .control
+                            input#firstName.input(name='firstName' placeholder='First Name')
+                    .column
+                        .field
+                            label(for='lastName') Last Name
+                            .control
+                                input#lastName.input(name='lastName' placeholder='Last Name')
+            .field
+                label(for='username') Username
+                .control.has-icons-left
+                    input#username.input(name='username' placeholder='Username' type='text')
+                    span.icon.is-small.is-left
+                        i.fas.fa-user
+            .field
+                label(for='email') Email Address
+                .control.has-icons-left
+                    input#email.input(name='email' placeholder='Email Address' type='text')
+                    span.icon.is-small.is-left
+                        i.fas.fa-envelope
+            .field
+                label(for='phoneNumber') Phone Number
+                .control.has-icons-left
+                    input#phoneNumber.input(name='phoneNumber' placeholder='+1 (123) 456-7890' type='tel')
+                    span.icon.is-small.is-left
+                        i.fas.fa-phone
+            .field
+                label(for='dateOfBirth') Date of Birth (MM-DD-YYYY)
+                .control.has-icons-left
+                    input#dateOfBirth.input(name='dateOfBirth' type='date')
+                    span.icon.is-small.is-left
+                        i.fas.fa-birthday-cake
+            .field
+                label(for='password') Password
+                .control.has-icons-left
+                    input#password.input(name='password' placeholder='Password' type='password')
+                    span.icon.is-small.is-left
+                        i.fas.fa-key
+            .field
+                .control.is-pulled-right
+                    input.button.is-info(type='submit' value='Register')
+        // End Login Form
