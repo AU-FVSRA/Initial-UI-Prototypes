@@ -1,168 +1,242 @@
 <!DOCTYPE html>
 <html class="has-navbar-fixed-top"></html>
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title></title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
-<body>
-<nav aria-label="main navigation" class="navbar is-fixed-top is-light" role="navigation">
-    <div class="navbar-brand"><a class="navbar-item" href="/index.html"><img alt="FVSR_Logo" src="../testFVSRLogo.png"></a>
-        <!-- Mobile Menu--><a aria-expanded="false" aria-label="menu" class="navbar-burger"
-                              data-target="navbarBasicExample" role="button"><span aria-hidden="true"></span><span
-                aria-hidden="true"></span><span aria-hidden="true"></span></a>
-    </div>
-    <div class="navbar-menu" id="mainSiteNavBar">
-        <div class="navbar-start"><a class="navbar-item">Home</a>
-            <div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link">More</a>
-                <div class="navbar-dropdown"><a class="navbar-item">About</a><a class="navbar-item">Contact</a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">Report an issue</a>
-                </div>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title></title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+  <body>
+    <!--include Form-Selection.pug-->
+    <!--include MinorInjuryForm.pug-->
+    <!--include LoginPage.pug-->
+    <!--include RegistrationPage.pug-->
+    <!--include PDRMA_Form_03.pug-->
+    <!--include PDRMA_Form_04.pug-->
+    <section class="section">
+      <div class="container">
+        <form>
+          <div class="message is-info has-text-centered">
+            <div class="message-body">
+              <figure class="image is-128x128"><img class="is-rounded" alt="PDRMA_LOGO_ROUNDED" src="https://media-exp1.licdn.com/dms/image/C4E0BAQHJeEACfvB0WQ/company-logo_200_200/0/1623763985456?e=2159024400&amp;v=beta&amp;t=6P9gEX5E-fAXw32TdOXnFY2iLws01efvqMzBCHFp1VE"></figure>
+              <h1 class="title">Park District Risk Management Agency (Form 04E)</h1>
+              <p class="subtitle">Notification of Injury to Employer Report</p>
+              <p class="subtitle">(Employee to complete and submit to supervisor or HR)</p>
             </div>
-        </div>
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons"><a class="button is-info"><strong>Sign up</strong></a><a
-                        class="button is-inverted">Log in</a></div>
+          </div>
+          <div class="field">
+            <label class="label" for="employeeFullName">Employee Name</label>
+            <div class="control">
+              <input class="input" id="employeeFullName" name="employeeFullName" type="text">
             </div>
-        </div>
-    </div>
-</nav>
-<section class="section">
-    <div class="container">
-        <h1 class="title">Minor Injury Report Form</h1>
-        <p class="subtitle">Please fill out the form below to report a minor injury.</p>
-        <!-- form below-->
-        <form id="minorInjuryReportForm" method="post">
-            <!-- Form section #1-->
+          </div>
+          <hr>
+          <div class="field">
             <div class="columns">
-                <!-- warning/instructions-->
-                <div class="column" id="instructionsCol">
-                    <article class="message is-danger">
-                        <div class="message-header">
-                            <p>Instructions</p>
-                        </div>
-                        <div class="message-body">
-                            <div class="content">
-                                <ol>
-                                    <li><strong>Administer necessary first aid</strong></li>
-                                    <li>Document minor injuries utilizing this form
-                                        <ul>
-                                            <li>(For serious injuries please utilize PDRMA forms)</li>
-                                        </ul>
-                                    </li>
-                                    <li>Notify parent/guardian upon dismissal from program</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <!-- program/group name-->
-                <div class="column">
-                    <div class="field">
-                        <label class="label" for="programName">Program/Group Name</label>
-                        <div class="control has-icons-left"><span class="select" id="programSelection">
-                    <select id="programName" name="programName">
-                      <option value="">Select Program/Group</option>
-                      <option value="1">Basketball Program - Summer</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                      <option value="4">Option 4</option>
-                      <option value="5">Option 5</option>
-                      <option value="addNewProgram">Add New...</option>
-                    </select></span><span class="icon is-small is-left"><i class="fas fa-globe"></i></span></div>
-                    </div>
-                    <div class="field">
-                        <label class="label" for="programLeader">Program Leader(s)</label>
-                        <div class="control">
-                            <input class="input" id="programLeader" name="programLeader" type="text">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label" for="programSeasonYear">Program Season/Year</label>
-                        <div class="control">
-                            <input class="input" id="programSeasonYear" name="programSeasonYear" type="text">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <!-- Form Section #2-->
-            <div class="field">
-                <div class="columns">
-                    <div class="column">
-                        <label class="label" for="injuryDate">Injury Date</label>
-                        <div class="control">
-                            <input class="input" id="injuryDate" name="injuryDate" type="date">
-                        </div>
-                    </div>
-                    <div class="column">
-                        <label class="label" for="injuryTime">Injury Time</label>
-                        <div class="control">
-                            <input class="input" id="injuryTime" name="injuryTime" type="time">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="field">
-                <label class="label" for="nameOfInjured">Name of Injured Person</label>
+              <div class="column">
+                <label class="label" for="dateOfIncident">Date of incident</label>
                 <div class="control">
-                    <input class="input" id="nameOfInjured" name="nameOfInjured" placeholder="Name of Injured Person"
-                           type="text">
+                  <input class="input" id="dateOfIncident" name="dateOfIncident" type="date">
                 </div>
-            </div>
-            <div class="field">
-                <label class="label" for="injuryLocation">Location of Injury on Person</label>
+              </div>
+              <div class="column">
+                <label class="label" for="timeOfIncident">Time of incident</label>
                 <div class="control">
-                    <input class="input" id="injuryLocation" name="injuryLocation"
-                           placeholder="Location of Injury (Ex. Right Elbow, Left Knee, etc.)" type="text">
+                  <input class="input" id="timeOfIncident" name="timeOfIncident" type="time">
                 </div>
+              </div>
             </div>
-            <div class="field">
-                <label class="label" for="treatmentAdministered">Treatment Administered</label>
+          </div>
+          <hr>
+          <div class="field">
+            <label class="label" for="specificLocationOfIncident">
+              Specific location of accident.(Ex. Second floor
+              hallway of recreation center, storage closet of maintenance shed, south entrance of aquatic
+              facility, etc.)
+            </label>
+            <div class="control">
+              <textarea class="textarea" id="specificLocationOfIncident" name="specificLocationOfIncident"></textarea>
+            </div>
+          </div>
+          <hr>
+          <div class="field">
+            <div class="columns">
+              <div class="column">
+                <label class="label">Are you reporting the injury for the first time using this form?</label>
+                <label class="radio">
+                  <input name="reportingForFirstTime" type="radio" value="yes">                            Yes
+                </label>
+                <label class="radio">
+                  <input name="reportingForFirstTime" type="radio" value="no">                            No
+                </label>
+                <div class="field">
+                  <label class="label">
+                    If no, when did you first report the injury (verbally or in writing)
+                    and to whom did you report it?
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="columns">
+              <div class="column">
+                <label class="label" for="priorReportDate">Date</label>
                 <div class="control">
-                    <input class="input" id="treatmentAdministered" name="treatmentAdministered"
-                           placeholder="Treatment Administered (Ex. Rinsed wound, applied bandage, ice pack provided, etc.)"
-                           type="text">
+                  <input class="input" id="priorReportDate" name="priorReportDate" type="date">
                 </div>
-            </div>
-            <div class="field">
-                <label class="label" for="howInjuryOccurred">How Injury Occurred</label>
+              </div>
+              <div class="column">
+                <label class="label" for="priorReportTime">Time</label>
                 <div class="control">
-                    <textarea class="textarea" id="howInjuryOccurred" name="howInjuryOccurred"
-                              placeholder="Explain how the injury occurred (Ex. Fell off swing)"></textarea>
+                  <input class="input" id="priorReportTime" name="priorReportTime" type="time">
                 </div>
-            </div>
-            <div class="field">
-                <label class="label" for="locationInjuryOccurred">Facility/Location Injury Occurred</label>
+              </div>
+              <div class="column">
+                <label class="label" for="priorPersonReportedTo">Reported to</label>
                 <div class="control">
-                    <textarea class="textarea" id="locationInjuryOccurred" name="locationInjuryOccurred"
-                              placeholder="Where did the injury take place? (Ex. Harmony Park Swings)"
-                              rows="2"></textarea>
+                  <input class="input" id="priorPersonReportedTo" name="priorPersonReportedTo" type="text">
                 </div>
+              </div>
             </div>
-            <div class="field">
-                <label class="label" for="staffWhoNotified">Full Name of Staff Who Notified Parent/Guardian</label>
+          </div>
+          <hr>
+          <div class="field">
+            <label class="label" for="describeHowInjuryOccurred">
+              Describe how the injury occurred. (Identify the job
+              task you were doing and include a step-by-step explanation of what led to the injury.)
+            </label>
+            <div class="control">
+              <textarea class="textarea" id="describeHowInjuryOccurred" name="describeHowInjuryOccurred"></textarea>
+            </div>
+          </div>
+          <hr>
+          <div class="field">
+            <label class="label" for="namesOfAllPeoplePresent">
+              Name all people present at the time of injury (e.g.,
+              coworkers and/or witnesses)
+            </label>
+            <div class="control">
+              <textarea class="textarea" id="namesOfAllPeoplePresent" name="namesOfAllPeoplePresent"></textarea>
+            </div>
+          </div>
+          <hr>
+          <div class="field">
+            <label class="label" for="allBodyPartsInjured">
+              Identify all body parts you injured. (Be specific.
+              Indicate left or right, upper or lower.)
+            </label>
+            <div class="control">
+              <textarea class="textarea" id="allBodyPartsInjured" name="allBodyPartsInjured"></textarea>
+            </div>
+          </div>
+          <hr>
+          <div class="field">
+            <div class="columns">
+              <div class="column">
+                <label class="label">Did you seek medical attention on the date of the accident?</label>
+                <label class="radio">
+                  <input name="medicalAttentionSought" type="radio" value="yes">                            Yes
+                </label>
+                <label class="radio">
+                  <input name="medicalAttentionSought" type="radio" value="no">                            No
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="whereWasMedicalTreatmentGiven">If yes, where did you seek treatment?</label>
+            <div class="control">
+              <input class="input" id="whereWasMedicalTreatmentGiven" name="whereWasMedicalTreatmentGiven" type="text">
+            </div>
+          </div>
+          <hr>
+          <div class="field">
+            <div class="columns">
+              <div class="column">
+                <label class="label">Have you injured this body part previously?</label>
+                <label class="radio">
+                  <input name="previouslyInjuredBodyPart" type="radio" value="yes">                            Yes
+                </label>
+                <label class="radio">
+                  <input name="previouslyInjuredBodyPart" type="radio" value="no">                            No
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="priorInjuryDescription">
+              If yes, please describe which body part and what the
+              prior injury was.
+            </label>
+            <div class="control">
+              <textarea class="textarea" id="priorInjuryDescription" name="priorInjuryDescription"></textarea>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="priorInjuryMedicalHistory">If yes, where did you seek treatment?</label>
+            <div class="control">
+              <input class="input" id="priorInjuryMedicalHistory" name="priorInjuryMedicalHistory" type="text">
+            </div>
+          </div>
+          <hr>
+          <div class="field">
+            <label class="label">The above information is true and accurate:</label>
+          </div>
+          <div class="field">
+            <div class="columns">
+              <div class="column">
+                <label class="label" for="employeeSignature">Employee Signature</label>
                 <div class="control">
-                    <input class="input" id="staffWhoNotified" name="staffWhoNotified"
-                           placeholder="Staff member who notified parent/guardian of injured peron." type="text">
+                  <input class="input" id="employeeSignature" name="employeeSignature" type="text">
                 </div>
-            </div>
-            <div class="field is-pulled-right">
+              </div>
+              <div class="column">
+                <label class="label" for="employeeSignatureDate">Date</label>
                 <div class="control">
-                    <input class="button is-info" type="submit">
+                  <input class="input" id="employeeSignatureDate" name="employeeSignatureDate" type="date">
                 </div>
+              </div>
             </div>
+          </div>
+          <hr>
+          <div class="field">
+            <label class="label">Notification of injury was received on:</label>
+          </div>
+          <div class="field">
+            <label class="label" for="dateIncidentReportReceived">Date received by employer representative</label>
+            <div class="control">
+              <input class="input" id="dateIncidentReportReceived" name="dateIncidentReportReceived" type="date">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Notification of injury was received by:</label>
+          </div>
+          <div class="field">
+            <label class="label" for="fvsraEmployeeSignature">Representative signature</label>
+            <div class="control">
+              <input class="input" id="fvsraEmployeeSignature" name="fvsraEmployeeSignature" type="text">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="fvsraEmployeeSignaturePrint">Printed name</label>
+            <div class="control">
+              <input class="input" id="fvsraEmployeeSignaturePrint" name="fvsraEmployeeSignaturePrint" type="text">
+            </div>
+          </div>
+          <hr>
+          <div class="buttons">
+            <button class="button is-info" type="submit">Submit</button>
+            <button class="button is-warning" type="reset">Reset</button>
+          </div>
         </form>
-    </div>
-</section>
-<footer class="footer">
-    <div class="content has-text-centered">
-        <p>&copy; | FVSRA | FVSRA.org</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>&copy;  | FVSRA | FVSRA.org</p>
         <p class="is-italic">Powered by: AU Coding Connoisseurs</p>
-    </div>
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </head>
