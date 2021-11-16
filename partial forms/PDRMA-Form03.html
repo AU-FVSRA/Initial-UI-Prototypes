@@ -1,0 +1,337 @@
+<link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+
+<section class="section">
+    <div class="container">
+        <form>
+            <div class="message is-info has-text-centered">
+                <div class="message-body">
+                    <figure class="image is-128x128">
+                        <img alt="PDRMA_LOGO_ROUNDED"
+                             class="is-rounded"
+                             src="https://media-exp1.licdn.com/dms/image/C4E0BAQHJeEACfvB0WQ/company-logo_200_200/0/1623763985456?e=2159024400&v=beta&t=6P9gEX5E-fAXw32TdOXnFY2iLws01efvqMzBCHFp1VE">
+                    </figure>
+                    <h1 class="title">Park District Risk Management Agency (Form 03)</h1>
+                    <p class="subtitle">(For damage to agency property)</p>
+                    <p class="subtitle">Attorney/Client Privileged Document</p>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label" for="agencyName">Agency Name</label>
+                        <div class="control">
+                            <input class="input" id="agencyName" name="agencyName"
+                                   placeholder="Agency Name" type="text" value="Fox Valley Special Recreation">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="todaysDate">Today's Date</label>
+                        <div class="control">
+                            <input class="input" id="todaysDate" name="todaysDate" type="date">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label" for="dateOfIncident">Date of Incident</label>
+                        <div class="control">
+                            <input class="input" id="dateOfIncident" name="dateOfIncident" type="date">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="timeOfIncident">Time of Incident</label>
+                        <div class="control">
+                            <input class="input" id="timeOfIncident" name="timeOfIncident" type="time">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label" for="nameOfPersonCompletingForm">Name of Person Completing Report</label>
+                        <div class="control">
+                            <input class="input" id="nameOfPersonCompletingForm" name="nameOfPersonCompletingForm"
+                                   type="text">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="titleOfPersonCompletingReport">Title of Person Completing
+                            Report</label>
+                        <div class="control">
+                            <input class="input" id="titleOfPersonCompletingReport" name="titleOfPersonCompletingReport"
+                                   type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label" for="businessPhone">Business Phone</label>
+                        <div class="control">
+                            <input class="input" id="businessPhone" name="businessPhone" placeholder="(123) 456-7890"
+                                   type="number">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="businessEmail">Business Email</label>
+                        <div class="control">
+                            <input class="input" id="businessEmail" name="businessEmail"
+                                   placeholder="user@email.com/.org"
+                                   type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label" for="incidentDescription">How Did the Incident Occur and What Property was
+                    Damaged?</label>
+                <div class="control">
+                    <textarea class="textarea" id="incidentDescription"
+                              placeholder="Provide a brief factual summary"></textarea>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label" for="locationOfIncident">Name of the location (park, pool, community center; Ex.
+                    Smith Pool,
+                    Johnson Community Center) or nearest intersection where the incident occurred</label>
+                <div class="control">
+                    <input class="input" id="locationOfIncident" name="locationOfIncident" type="text">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label">Is there an address for incident location? If yes, please provide the
+                    following:</label>
+            </div>
+            <div class="field">
+                <label class="label" for="incidentLocationStreetAddress">Street Address</label>
+                <div class="control">
+                    <input class="input" id="incidentLocationStreetAddress" name="incidentLocationStreetAddress"
+                           placeholder="123 Name St" type="text">
+                </div>
+            </div>
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label" for="incidentLocationCity">City</label>
+                        <div class="control">
+                            <input class="input" id="incidentLocationCity" name="incidentLocationCity" type="text">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="incidentLocationState">State</label>
+                        <div class="control">
+                            <input class="input" id="incidentLocationState" name="incidentLocationState" type="text">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="incidentLocationPostalCode">Zip Code</label>
+                        <div class="control">
+                            <input class="input" id="incidentLocationPostalCode" name="incidentLocationPostalCode"
+                                   type="number">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label" for="facilityLocationDamaged">Location (Specify the exact type of location/facility
+                    damaged,
+                    listing multiple locations/facilities if necessary. Ex. maintenance garage, sports field)</label>
+                <div class="control">
+                    <input class="input" id="facilityLocationDamaged" name="facilityLocationDamaged" type="text">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label" for="primaryLocationOfDamage">Primary location (Identify the exact area of damage.
+                    Ex. tool
+                    storage, batting cage)</label>
+                <div class="control">
+                    <input class="input" id="primaryLocationOfDamage" name="primaryLocationOfDamage" type="text">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label" for="estimateValueOfLoss">Estimate of loss</label>
+                <div class="control">
+                    <input class="input" id="estimateValueOfLoss" name="estimateValueOfLoss" type="text">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label" for="contactPersonName">Contact person at facility</label>
+                <div class="control">
+                    <input class="input" id="contactPersonName" name="contactPersonName" type="text">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label" for="contactPersonEmail">Contact person's email</label>
+                <div class="control">
+                    <input class="input" id="contactPersonEmail" name="contactPersonEmail" type="text">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label" for="contactPersonPhoneNumber">Contact person's phone number</label>
+                <div class="control">
+                    <input class="input" id="contactPersonPhoneNumber" name="contactPersonPhoneNumber" type="text">
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- TODO: Need to fix this section to be able to capture the form fields -->
+            <div class="field">
+                <label class="label">Was damage caused by third-party (non-agency) individual?</label>
+                <label class="radio">
+                    <input name="damageCausedByThirdParty" type="radio" value="yes">
+                    Yes
+                </label>
+                <label class="radio">
+                    <input name="damageCausedByThirdParty" type="radio" value="no">
+                    No
+                </label>
+                <label class="radio">
+                    <input name="damageCausedByThirdParty" type="radio" value="unknown">
+                    Unknown
+                </label>
+            </div>
+
+            <div class="field">
+                <label class="label">Has the party responsible for damage been identified? If yes, provide the following
+                    contact information for the person or persons identified:</label>
+            </div>
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label" for="responsiblePartyName">Name</label>
+                        <div class="control">
+                            <input class="input" id="responsiblePartyName" name="responsiblePartyName" type="text">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="responsiblePartyAddress">Street Address</label>
+                        <div class="control">
+                            <input class="input" id="responsiblePartyAddress" name="responsiblePartyAddress"
+                                   placeholder="123 Name St" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label" for="responsiblePartyCity">City</label>
+                        <div class="control">
+                            <input class="input" id="responsiblePartyCity" name="responsiblePartyCity" type="text">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="responsiblePartyState">State</label>
+                        <div class="control">
+                            <input class="input" id="responsiblePartyState" name="responsiblePartyState" type="text">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="responsiblePartyPostalCode">Zip Code</label>
+                        <div class="control">
+                            <input class="input" id="responsiblePartyPostalCode" name="responsiblePartyPostalCode"
+                                   type="number">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- TODO: Need to also fix this section to ensure form fields get captured-->
+            <div class="field">
+                <label class="label">Has a police agency conducted an investigation?</label>
+                <label class="radio">
+                    <input name="policeAgencyInvolved" type="radio" value="yes">
+                    Yes
+                </label>
+                <label class="radio">
+                    <input name="policeAgencyInvolved" type="radio" value="no">
+                    No
+                </label>
+                <label class="radio">
+                    <input name="policeAgencyInvolved" type="radio" value="unknown">
+                    Unknown
+                </label>
+            </div>
+
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label" for="policeAgencyName">What police agency investigated the
+                            incident?</label>
+                        <div class="control">
+                            <input class="input" id="policeAgencyName" name="policeAgencyName" type="text">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="policeReportNumber">What is the police report number?</label>
+                        <div class="control">
+                            <input class="input" id="policeReportNumber" name="policeReportNumber" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="criminalChargesPressed">Were criminal charges brought against the responsible
+                    party? If yes,
+                    what were the charges?</label>
+                <div class="control">
+                    <input class="input" id="criminalChargesPressed" name="criminalChargesPressed" type="text">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="buttons">
+                <button class="button is-info" type="submit">Submit</button>
+                <button class="button is-warning" type="reset">Reset</button>
+            </div>
+        </form>
+
+    </div>
+</section>

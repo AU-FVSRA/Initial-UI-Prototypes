@@ -1,0 +1,251 @@
+<link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+
+<section class="section">
+    <div class="container">
+        <form>
+
+            <div class="message is-info has-text-centered">
+                <div class="message-body">
+                    <figure class="image is-128x128">
+                        <img alt="PDRMA_LOGO_ROUNDED"
+                             class="is-rounded"
+                             src="https://media-exp1.licdn.com/dms/image/C4E0BAQHJeEACfvB0WQ/company-logo_200_200/0/1623763985456?e=2159024400&v=beta&t=6P9gEX5E-fAXw32TdOXnFY2iLws01efvqMzBCHFp1VE">
+                    </figure>
+                    <h1 class="title">Park District Risk Management Agency (Form 04E)</h1>
+                    <p class="subtitle">Notification of Injury to Employer Report</p>
+                    <p class="subtitle">(Employee to complete and submit to supervisor or HR)</p>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="employeeFullName">Employee Name</label>
+                <div class="control">
+                    <input class="input" id="employeeFullName" name="employeeFullName" type="text">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label" for="dateOfIncident">Date of incident</label>
+                        <div class="control">
+                            <input class="input" id="dateOfIncident" name="dateOfIncident" type="date">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="timeOfIncident">Time of incident</label>
+                        <div class="control">
+                            <input class="input" id="timeOfIncident" name="timeOfIncident" type="time">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label" for="specificLocationOfIncident">Specific location of accident.(Ex. Second floor
+                    hallway of recreation center, storage closet of maintenance shed, south entrance of aquatic
+                    facility, etc.)</label>
+                <div class="control">
+                    <textarea class="textarea" id="specificLocationOfIncident"
+                              name="specificLocationOfIncident"></textarea>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label">Are you reporting the injury for the first time using this form?</label>
+                        <label class="radio">
+                            <input name="reportingForFirstTime" type="radio" value="yes">
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input name="reportingForFirstTime" type="radio" value="no">
+                            No
+                        </label>
+                        <div class="field">
+                            <label class="label">If no, when did you first report the injury (verbally or in writing)
+                                and to whom did you report it?</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label" for="priorReportDate">Date</label>
+                        <div class="control">
+                            <input class="input" id="priorReportDate" name="priorReportDate" type="date">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="priorReportTime">Time</label>
+                        <div class="control">
+                            <input class="input" id="priorReportTime" name="priorReportTime" type="time">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="priorPersonReportedTo">Reported to</label>
+                        <div class="control">
+                            <input class="input" id="priorPersonReportedTo" name="priorPersonReportedTo" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label" for="describeHowInjuryOccurred">Describe how the injury occurred. (Identify the job
+                    task you were doing and include a step-by-step explanation of what led to the injury.)</label>
+                <div class="control">
+                    <textarea class="textarea" id="describeHowInjuryOccurred"
+                              name="describeHowInjuryOccurred"></textarea>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label" for="namesOfAllPeoplePresent">Name all people present at the time of injury (e.g.,
+                    coworkers and/or witnesses)</label>
+                <div class="control">
+                    <textarea class="textarea" id="namesOfAllPeoplePresent" name="namesOfAllPeoplePresent"></textarea>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label" for="allBodyPartsInjured">Identify all body parts you injured. (Be specific.
+                    Indicate left or right, upper or lower.)</label>
+                <div class="control">
+                    <textarea class="textarea" id="allBodyPartsInjured" name="allBodyPartsInjured"></textarea>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label">Did you seek medical attention on the date of the accident?</label>
+                        <label class="radio">
+                            <input name="medicalAttentionSought" type="radio" value="yes">
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input name="medicalAttentionSought" type="radio" value="no">
+                            No
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="whereWasMedicalTreatmentGiven">If yes, where did you seek treatment?</label>
+                <div class="control">
+                    <input class="input" id="whereWasMedicalTreatmentGiven" name="whereWasMedicalTreatmentGiven"
+                           type="text">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label">Have you injured this body part previously?</label>
+                        <label class="radio">
+                            <input name="previouslyInjuredBodyPart" type="radio" value="yes">
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input name="previouslyInjuredBodyPart" type="radio" value="no">
+                            No
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="priorInjuryDescription">If yes, please describe which body part and what the
+                    prior injury was.</label>
+                <div class="control">
+                    <textarea class="textarea" id="priorInjuryDescription" name="priorInjuryDescription"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="priorInjuryMedicalHistory">If yes, where did you seek treatment?</label>
+                <div class="control">
+                    <input class="input" id="priorInjuryMedicalHistory" name="priorInjuryMedicalHistory" type="text">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label">The above information is true and accurate:</label>
+            </div>
+            <div class="field">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label" for="employeeSignature">Employee Signature</label>
+                        <div class="control">
+                            <input class="input" id="employeeSignature" name="employeeSignature" type="text">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label" for="employeeSignatureDate">Date</label>
+                        <div class="control">
+                            <input class="input" id="employeeSignatureDate" name="employeeSignatureDate" type="date">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="field">
+                <label class="label">Notification of injury was received on:</label>
+            </div>
+            <div class="field">
+                <label class="label" for="dateIncidentReportReceived">Date received by employer representative</label>
+                <div class="control">
+                    <input class="input" id="dateIncidentReportReceived" name="dateIncidentReportReceived" type="date">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Notification of injury was received by:</label>
+            </div>
+            <div class="field">
+                <label class="label" for="fvsraEmployeeSignature">Representative signature</label>
+                <div class="control">
+                    <input class="input" id="fvsraEmployeeSignature" name="fvsraEmployeeSignature" type="text">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="fvsraEmployeeSignaturePrint">Printed name</label>
+                <div class="control">
+                    <input class="input" id="fvsraEmployeeSignaturePrint" name="fvsraEmployeeSignaturePrint"
+                           type="text">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="buttons">
+                <button class="button is-info" type="submit">Submit</button>
+                <button class="button is-warning" type="reset">Reset</button>
+            </div>
+
+
+        </form>
+
+    </div>
+</section>
