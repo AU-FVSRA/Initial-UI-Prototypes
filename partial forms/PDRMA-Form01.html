@@ -1,0 +1,851 @@
+<link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+
+<section class="section">
+    <div class="container">
+
+        <div class="message is-info has-text-centered">
+            <div class="message-body">
+                <figure class="image is-128x128">
+                    <img alt="PDRMA_LOGO_ROUNDED"
+                         class="is-rounded"
+                         src="https://media-exp1.licdn.com/dms/image/C4E0BAQHJeEACfvB0WQ/company-logo_200_200/0/1623763985456?e=2159024400&v=beta&t=6P9gEX5E-fAXw32TdOXnFY2iLws01efvqMzBCHFp1VE">
+                </figure>
+                <h1 class="title">Park District Risk Management Agency (Form 01)</h1>
+                <p class="subtitle">Accident/Incident Report</p>
+                <p class="subtitle">Attorney/Client Privileged Document</p>
+            </div>
+        </div>
+
+        <form>
+
+            <div class="columns">
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="agencyName">Agency Name</label>
+                        <div class="control">
+                            <input class="input " id="agencyName" name="agencyName" type="text"
+                                   value="Fox Valley Special Recreation Agency">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="todaysDate">Today's date</label>
+                        <div class="control">
+                            <input class="input " id="todaysDate" name="todaysDate" type="date" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="columns">
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="dateOfIncident">Date of incident</label>
+                        <div class="control">
+                            <input class="input " id="dateOfIncident" name="dateOfIncident" placeholder="(mm/dd/yyyy)"
+                                   type="date" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="timeOfIncident">Time of incident</label>
+                        <div class="control">
+                            <input class="input " id="timeOfIncident" name="timeOfIncident"
+                                   placeholder="(hh/mm a.m./p.m.)"
+                                   type="time" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="columns">
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="nameOfPersonCompletingReport">Name of person completing the
+                            report</label>
+                        <div class="control">
+                            <input class="input " id="nameOfPersonCompletingReport" name="nameOfPersonCompletingReport"
+                                   type="text" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="titleOfPersonCompletingReport">Title of person completing the
+                            report</label>
+                        <div class="control">
+                            <input class="input " id="titleOfPersonCompletingReport"
+                                   name="titleOfPersonCompletingReport" type="text" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="businessPhoneNumber">Business phone number</label>
+                        <div class="control">
+                            <input class="input " id="businessPhoneNumber" name="businessPhoneNumber"
+                                   placeholder="630.907.114"
+                                   type="text" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="businessEmail">Business email</label>
+                        <div class="control">
+                            <input class="input " id="businessEmail" name="businessEmail" placeholder="jasonp@rsvp.org"
+                                   type="text" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="howDidIncidentOccur">How did the incident occur? (Provide a brief, factual
+                    description; do
+                    not speculate fault, etc.)</label>
+                <div class="control">
+                    <input class="input " id="howDidIncidentOccur" name="howDidIncidentOccur" type="text" value="">
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="locationOfIncident">Name of the location (park, pool, community center; Ex.
+                    Smith Pool,
+                    Johnson Community Center) or nearest intersection where the incident occurred.</label>
+                <div class="control">
+                    <input class="input " id="locationOfIncident" name="locationOfIncident" type="text" value="">
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="incidentAddressExists">
+                    Is there an address for this location? If yes, please provide the following:
+                </label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="incidentAddressExists" name="incidentAddressExists">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="incidentAddressStreet">Street address</label>
+                <div class="control">
+                    <input class="input " id="incidentAddressStreet" name="incidentAddressStreet" type="text" value="">
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="incidentAddressCity">City</label>
+                        <div class="control">
+                            <input class="input " id="incidentAddressCity" name="incidentAddressCity" type="text"
+                                   value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="incidentAddressState">State</label>
+                        <div class="control">
+                            <input class="input " id="incidentAddressState" name="incidentAddressState" type="text"
+                                   value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="incidentAddressPostalCode">Zip code</label>
+                        <div class="control">
+                            <input class="input " id="incidentAddressPostalCode" name="incidentAddressPostalCode"
+                                   type="text" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="incidentFacilityLocation">Location (Specify the exact type of
+                    location/facility where
+                    injury
+                    occurred. Ex. maintenance garage, sports field, aquatic outdoor, golf course, etc.)</label>
+                <div class="control">
+                    <input class="input " id="incidentFacilityLocation" name="incidentFacilityLocation" type="text"
+                           value="">
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="incidentFacilitySpecificLocation">Primary location (Specify exact location.
+                    Ex. lap pool, cart
+                    storage, classroom, pavilion)</label>
+                <div class="control">
+                    <input class="input " id="incidentFacilitySpecificLocation" name="incidentFacilitySpecificLocation"
+                           type="text" value="">
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="wasSomeoneInjured">Was a person injured? (Ex. patron, citizen, participant,
+                    volunteer)
+                    If yes, please provide the following information:</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="wasSomeoneInjured" name="wasSomeoneInjured">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="columns">
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="injuredPersonLastName">Last name</label>
+                        <div class="control">
+                            <input class="input " id="injuredPersonLastName" name="injuredPersonLastName" type="text"
+                                   value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="injuredPersonFirstName">First Name</label>
+                        <div class="control">
+                            <input class="input " id="injuredPersonFirstName" name="injuredPersonFirstName" type="text"
+                                   value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="injuredPersonStreetAddress">Address</label>
+                <div class="control">
+                    <input class="input " id="injuredPersonStreetAddress" name="injuredPersonStreetAddress" type="text"
+                           value="">
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="injuredPersonCity">City</label>
+                        <div class="control">
+                            <input class="input " id="injuredPersonCity" name="injuredPersonCity" type="text" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="injuredPersonState">State</label>
+                        <div class="control">
+                            <input class="input " id="injuredPersonState" name="injuredPersonState" type="text"
+                                   value="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="injuredPersonPostalCode">Zip code</label>
+                        <div class="control">
+                            <input class="input " id="injuredPersonPostalCode" name="injuredPersonPostalCode"
+                                   type="text" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="columns">
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="injuredPersonHomePhoneNumber">Home phone #</label>
+                        <div class="control">
+                            <input class="input " id="injuredPersonHomePhoneNumber" name="injuredPersonHomePhoneNumber"
+                                   type="text" value="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="injuredPersonWorkPhoneNumber">Work phone #</label>
+                        <div class="control">
+                            <input class="input " id="injuredPersonWorkPhoneNumber" name="injuredPersonWorkPhoneNumber"
+                                   type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="injuredPersonCellPhoneNumber">Cell phone #</label>
+                        <div class="control">
+                            <input class="input " id="injuredPersonCellPhoneNumber" name="injuredPersonCellPhoneNumber"
+                                   type="text" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="injuredPersonAge">Age</label>
+                <div class="control">
+                    <input class="input " id="injuredPersonAge" name="injuredPersonAge" type="text" value="">
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="injuredPersonSex">Sex</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="injuredPersonSex" name="injuredPersonSex">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <!--<option value="non-binary">Non-Binary</option>-->
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="isInjuredPersonAVolunteer">Is injured person an agency volunteer?</label>
+                <div class="control">
+                    <div class="select">
+                        <select id="isInjuredPersonAVolunteer" name="isInjuredPersonAVolunteer">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="injuryBriefDescription">Describe the injury (affected body part and type of
+                    injury;
+                    Ex.
+                    contusion, bruise, laceration, sprain, break, etc.)</label>
+                <div class="control">
+                    <textarea class="textarea" id="injuryBriefDescription" name="injuryBriefDescription"></textarea>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="didInjuredPersonMakeStatement">Did injured person make any statements?</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="didInjuredPersonMakeStatement" name="didInjuredPersonMakeStatement">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="injuredPersonStatement">If yes, what did injured person say?</label>
+                <div class="control">
+                    <textarea class="textarea" id="injuredPersonStatement" name="injuredPersonStatement"></textarea>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="wasFirstAidAdministered">Was first aid administered?</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="wasFirstAidAdministered" name="wasFirstAidAdministered">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="columns">
+                <div class="column">
+                    <div class="field">
+                        <label class="label" for="nameOfPersonWhoProvidedFirstAid">
+                            Name of person who administered first aid
+                        </label>
+                        <div class="control">
+                            <input class="input" id="nameOfPersonWhoProvidedFirstAid"
+                                   name="nameOfPersonWhoProvidedFirstAid"
+                                   type="text" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="field">
+                        <label class="label" for="titleOfPersonWhoProvidedFirstAid">
+                            Title of person who administered first aid
+                        </label>
+                        <div class="control">
+                            <input class="input" id="titleOfPersonWhoProvidedFirstAid"
+                                   name="titleOfPersonWhoProvidedFirstAid"
+                                   type="text" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="whatFirstAidWasGiven">What first aid was given?</label>
+                <div class="control">
+                    <input class="input " id="whatFirstAidWasGiven" name="whatFirstAidWasGiven" type="text" value="">
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="firstFirstAidInvolveAEDorCPR">
+                    Did first aid involve AED and/or CPR? If yes, please
+                    submit a PDRMA post-AED form.
+                </label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="firstFirstAidInvolveAEDorCPR" name="firstFirstAidInvolveAEDorCPR">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="wereParamedicServicesOffered">Were paramedic services offered?</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="wereParamedicServicesOffered" name="wereParamedicServicesOffered">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="wereParamedicServicesCalledAndRefused">Called and refused (at scene by
+                    patron)</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="wereParamedicServicesCalledAndRefused"
+                                name="wereParamedicServicesCalledAndRefused">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="wereParamedicServicesOfferedAndCalled">Offered and called</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="wereParamedicServicesOfferedAndCalled"
+                                name="wereParamedicServicesOfferedAndCalled">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="wereParamedicServicesOfferedAndRefused">Offered and refused</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="wereParamedicServicesOfferedAndRefused"
+                                name="wereParamedicServicesOfferedAndRefused">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="wereParamedicServicesOfferedRefusedButCalled">Offered, refused, called by
+                    agency anyway</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="wereParamedicServicesOfferedRefusedButCalled"
+                                name="wereParamedicServicesOfferedRefusedButCalled">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="wereParamedicsCalledUnresponsivePerson">Unable to respond and called</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="wereParamedicsCalledUnresponsivePerson"
+                                name="wereParamedicsCalledUnresponsivePerson">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="werePoliceCalled">Were police called? If yes, please provide the following
+                    information.</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="werePoliceCalled" name="werePoliceCalled">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="policeDepartmentName">Name of police department</label>
+                <div class="control">
+                    <input class="input " id="policeDepartmentName" name="policeDepartmentName" type="text" value="">
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="policeOfficerName">Name of officer</label>
+                <div class="control">
+                    <input class="input " id="policeOfficerName" name="policeOfficerName" type="text" value="">
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="expectingPoliceReportFromInjuredPerson">Do you expect this person to submit a
+                    claim?</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="expectingPoliceReportFromInjuredPerson"
+                                name="expectingPoliceReportFromInjuredPerson">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="wasPropertyDamaged">Was property damaged as a result of this
+                    accident/incident?</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="wasPropertyDamaged" name="wasPropertyDamaged">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="propertyDamageOwner">If yes, how was the person involved in the
+                    accident/incident?</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="propertyDamageOwner" name="propertyDamageOwner">
+                            <option value="1">Owner of property adjacent to park district</option>
+                            <option value="2">Patron</option>
+                            <option value="3">Vehicle owner</option>
+                            <option value="4">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="propertyDamageOwnerName">Last name (or business name)</label>
+                <div class="control">
+                    <input class="input " id="propertyDamageOwnerName" name="propertyDamageOwnerName" type="text"
+                           value="">
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="propertyDamageOwnerFirstName">First name (not necessary if business
+                    name)</label>
+                <div class="control">
+                    <input class="input " id="propertyDamageOwnerFirstName" name="propertyDamageOwnerFirstName"
+                           type="text" value="">
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="propertyDamageAddress">Address</label>
+                <div class="control">
+                    <input class="input " id="propertyDamageAddress" name="propertyDamageAddress" type="text" value="">
+                </div>
+            </div>
+
+
+            <div class="columns">
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="propertyDamageCity">City</label>
+                        <div class="control">
+                            <input class="input " id="propertyDamageCity" name="propertyDamageCity" type="text">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="propertyDamageState">State</label>
+                        <div class="control">
+                            <input class="input " id="propertyDamageState" name="propertyDamageState" type="text"
+                                   value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="propertyDamagePostalCode">Zip code</label>
+                        <div class="control">
+                            <input class="input " id="propertyDamagePostalCode" name="propertyDamagePostalCode"
+                                   type="text" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="textinput-37">Phone number</label>
+                <div class="control">
+                    <input class="input " id="textinput-37" name="textinput-37" type="text">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="textinput-38">Describe the property damage</label>
+                <div class="control">
+                    <input class="input " id="textinput-38" name="textinput-38" type="text">
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label">
+                    If there was a witness(es) to the accident/incident, please provide the following information:
+                </label>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                    <div class="field">
+                        <label class="label" for="witnessLastName">Last name</label>
+                        <div class="control">
+                            <input class="input " id="witnessLastName" name="witnessLastName" type="text" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="witnessFirstName">First name</label>
+                        <div class="control">
+                            <input class="input " id="witnessFirstName" name="witnessFirstName" type="text" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="witnessAddress">Address</label>
+                <div class="control">
+                    <input class="input " id="witnessAddress" name="witnessAddress" type="text" value="">
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="witnessCity">City</label>
+                        <div class="control">
+                            <input class="input " id="witnessCity" name="witnessCity" type="text" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="witnessState">State</label>
+                        <div class="control">
+                            <input class="input " id="witnessState" name="witnessState" type="text" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Text input-->
+                    <div class="field">
+                        <label class="label" for="witnessPostalCode">Zip code</label>
+                        <div class="control">
+                            <input class="input " id="witnessPostalCode" name="witnessPostalCode" type="text"
+                                   value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="witnessPhoneNumber">Phone number</label>
+                <div class="control">
+                    <input class="input " id="witnessPhoneNumber" name="witnessPhoneNumber" type="text" value="">
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="field">
+                <label class="label" for="disWitnessMakeAStatement">Did witness make any statements?</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="" id="disWitnessMakeAStatement" name="disWitnessMakeAStatement">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="witnessStatement">If yes, what did witness say?</label>
+                <div class="control">
+                    <textarea class="textarea" id="witnessStatement" name="witnessStatement"></textarea>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="field">
+                <label class="label" for="witnessLocationAtTimeOfIncident">Where was witness when the accident/incident
+                    occurred?</label>
+                <div class="control">
+                    <input class="input " id="witnessLocationAtTimeOfIncident" name="witnessLocationAtTimeOfIncident"
+                           type="text" value="">
+                </div>
+            </div>
+
+            <!-- Button (Double) -->
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-info" type="submit">Submit</button>
+                </div>
+                <div class="control">
+                    <button class="button is-warning" type="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
