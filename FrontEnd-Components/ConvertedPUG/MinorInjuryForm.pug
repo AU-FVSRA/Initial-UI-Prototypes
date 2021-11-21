@@ -13,6 +13,7 @@ section.section
                     article.message.is-danger
                         .message-header
                             p Instructions
+                            button.delete(type='button' onclick='hideInstructions()')
                         .message-body
                             .content
                                 ol
@@ -86,3 +87,9 @@ section.section
             .field.is-pulled-right
                 .control
                     input.button.is-info(type='submit')
+
+script(type='text/javascript').
+    //hide the column with id="instructionsCol"
+    function hideInstructions() {
+        document.getElementById("instructionsCol").style.display = "none";
+    }
