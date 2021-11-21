@@ -13,9 +13,13 @@ app.get('/', (req, res) => {
         copyright_current_year: new Date().getFullYear(),
         pretty: true //This is for pretty HTML output (technically its deprecated, but it still works)
     });
+    console.log(`%c hello`, "color: green; font-size: 20px;");
 });
 
 
 app.listen(3000, () => {
-    console.log('Example app listening on port 3000!');
+    console.table({
+        "Port": 3000,
+        "Environment": "Development"
+    });
 });
