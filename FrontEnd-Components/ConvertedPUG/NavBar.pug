@@ -1,6 +1,6 @@
 nav.navbar.is-fixed-top.is-light(aria-label='main navigation' role='navigation')
     .navbar-brand
-        a.navbar-item(href='/index.html')
+        a.navbar-item(href='/')
             img(src='/images/FVSRLogo.png' alt='FVSR_Logo')
         // Mobile Menu
         a.navbar-burger(aria-expanded='false' aria-label='menu' data-target='navbarBasicExample' role='button')
@@ -34,7 +34,10 @@ nav.navbar.is-fixed-top.is-light(aria-label='main navigation' role='navigation')
         else
             .navbar-end
                 .navbar-item.is-hoverable.has-dropdown
-                    a.navbar-link Hello there, #{user.firstName}
+                    a.navbar-link
+                        span.icon.is-large
+                            i.fa.fa-user
+                        | Hello there, #{user.firstName}
                     .navbar-dropdown
                         a.navbar-item Manage Account
                         a.navbar-item Settings
@@ -45,3 +48,15 @@ nav.navbar.is-fixed-top.is-light(aria-label='main navigation' role='navigation')
                         span.icon
                             i.fas.fa-sign-out-alt
                         span Sign Out
+script.
+    $(document).ready(function () {
+
+        // Check for click events on the navbar burger icon
+        $(".navbar-burger").click(function () {
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+
+        });
+    });
