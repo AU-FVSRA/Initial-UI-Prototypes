@@ -1,0 +1,51 @@
+
+<script crossorigin="anonymous" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/dataTables.bulma.min.js"></script>
+<section class="section">
+  <div class="container">
+    <h1 class="title">Minor Injury Reports...</h1>
+    <p class="subtitle">Please select a report to view from the list below.</p>
+    <table class="table is-striped is-fullwidth" id="minorInjuryLogReport">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Report Date</th>
+          <th>Report Time</th>
+          <th>Program Name</th>
+          <th>Program Season/Year</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- SAMPLE ITEM #1-->
+        <tr>
+          <th>1</th>
+          <td>01/01/2018</td>
+          <td>12:00 PM</td>
+          <td>Summer Camp</td>
+          <td>2018</td>
+          <td>
+            <div class="buttons"><a class="button is-info" href="ViewMinorInjuryForm.html">View</a><a class="button is-danger" href="ViewMinorInjuryForm.html">Delete</a></div>
+          </td>
+        </tr>
+        <!-- SAMPLE ITEM #2-->
+        <tr>
+          <th>2</th>
+          <td>01/01/2018</td>
+          <td>12:00 PM</td>
+          <td>Summer Camp</td>
+          <td>2018</td>
+          <td>
+            <div class="buttons"><a class="button is-info" href="ViewMinorInjuryForm.html">View</a><a class="button is-danger" href="ViewMinorInjuryForm.html">Delete</a></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<script>
+  $(document).ready(function() {
+      $('#minorInjuryLogReport').DataTable({"paging": false});
+  } );
+</script>
